@@ -1,0 +1,141 @@
+// ------------------ Base colors ------------------
+
+@neboola-bg:          hsl(255,    25%,   3.1%); // Background
+@neboola-mono-1:      hsl(  0,     0%,    98%); // Text
+@neboola-mono-2:      hsl(  0,     0%,    91%); // Punctuation
+@neboola-mono-3:      hsl(232,   6.2%,  68.2%); // Comments
+
+@neboola-red:         hsl(8.4,  92.9%,  56.1%);
+@neboola-pink:        hsl(330,   100%,  70.6%);
+@neboola-blue:        hsl(240,   100%,    60%);
+@neboola-cyan:        hsl(188.7, 99.2%, 50.8%);
+@neboola-sea:         hsl(180.7, 38.3%,   58%);
+@neboola-green:       hsl(79.5,  73.3%, 39.6%);
+@neboola-orange:      hsl(40,     100%,   50%);
+@neboola-yellow:      hsl(60,     100%,   50%);
+@neboola-ink          hsl(222.6, 83.8%,  7.3%);
+
+// ------------------ Editor colors ------------------
+
+// General colors
+@syntax-text-color:                         @neboola-mono-1;
+@syntax-cursor-color:                       darken(@neboola-mono-1, 5%);
+@syntax-selection-color:                    hsla(hue(@neboola-bg), 80%, 80%, .2);
+@syntax-selection-flash-color:              hsla(hue(@neboola-bg), 70%, 80%, .6);
+@syntax-background-color:                   @neboola-bg;
+@syntax-cursor-line-color:                  hsla(hue(@neboola-bg), 100%, 85%, .04);
+@syntax-bracket-matcher-color:              hsla(hue(@neboola-bg), 80%, 81%, .45);
+
+// Guide colors
+@syntax-wrap-guide-color:                   darken(@neboola-mono-3, 9%);
+@syntax-indent-guide-color:                 darken(@neboola-mono-3, 9%);
+@syntax-invisible-character-color:          darken(@neboola-mono-3, 9%);
+
+// Find and replace colors
+@syntax-result-marker-color:                hsla(hue(@neboola-bg), 90%, 77%, .27);
+@syntax-result-marker-color-selected:       hsla(hue(@neboola-bg), 80%, 77%, .38);
+
+// Gutter colors
+@syntax-gutter-text-color:                  lighten(saturate(@neboola-mono-3, 1%), 9%);
+@syntax-gutter-text-color-selected:         lighten(saturate(@neboola-mono-3, 15%), 32%);
+@syntax-gutter-border-color:                @neboola-mono-1;
+@syntax-gutter-background-color:            @neboola-ink;
+@syntax-gutter-background-color-selected:   transparent;
+@syntax-gutter-cursor-line-color:           hsla(hue(@neboola-bg), 99%, 83%, .063);
+
+// Git colors
+@syntax-color-renamed:                 hsv(340, 50%, 99%);
+@syntax-color-added:                   hsv(170, 90%, 99%);
+@syntax-color-modified:                hsv(210, 75%, 99%);
+@syntax-color-removed:                 hsv(340, 50%, 99%);
+
+// ------------------ Language colors ------------------
+
+@syntax-color-src-comment:             @neboola-mono-3;
+@syntax-color-src-punctuation:         @neboola-mono-2;
+@syntax-color-src-operator:            @neboola-mono-2;
+@syntax-color-src-keyword:             @neboola-green;
+@syntax-color-src-language:            @neboola-green;
+@syntax-color-src-variable:            @neboola-blue;
+@syntax-color-src-string:              @neboola-orange;
+@syntax-color-src-symbol:              @neboola-orange;
+@syntax-color-src-regexp:              @neboola-orange;
+@syntax-color-src-special:             @neboola-yellow;
+@syntax-color-src-placeholder:         @neboola-yellow;
+@syntax-color-src-format:              @neboola-pink;
+@syntax-color-src-numeric:             @neboola-pink;
+@syntax-color-src-constant:            @neboola-pink;
+@syntax-color-src-invalid:             @neboola-red;
+
+@syntax-color-template-comment:        @neboola-mono-3;
+@syntax-color-template-punctuation:    @neboola-yellow;
+@syntax-color-template-operator:       @neboola-yellow;
+@syntax-color-template-keyword:        @neboola-yellow;
+@syntax-color-template-language:       @neboola-yellow;
+@syntax-color-template-variable:       @neboola-yellow;
+@syntax-color-template-string:         @neboola-yellow;
+@syntax-color-template-symbol:         @neboola-yellow;
+@syntax-color-template-regexp:         @neboola-yellow;
+@syntax-color-template-special:        @neboola-yellow;
+@syntax-color-template-placeholder:    @neboola-yellow;
+@syntax-color-template-format:         @neboola-yellow;
+@syntax-color-template-numeric:        @neboola-yellow;
+@syntax-color-template-constant:       @neboola-yellow;
+@syntax-color-template-invalid:        @neboola-red;
+
+@syntax-color-regexp-text:             @neboola-mono-1;
+@syntax-color-regexp-anchor:           @neboola-pink;
+@syntax-color-regexp-class:            @neboola-pink;
+@syntax-color-regexp-set:              @neboola-pink;
+@syntax-color-regexp-group:            @neboola-blue;
+@syntax-color-regexp-assertion:        @neboola-orange;
+@syntax-color-regexp-quantifier:       @neboola-sea;
+
+@syntax-color-gfm-text:                @neboola-mono-1;
+@syntax-color-gfm-comment:             @neboola-mono-3;
+@syntax-color-gfm-code:                @neboola-mono-3;
+@syntax-color-gfm-marker:              @neboola-pink;
+@syntax-color-gfm-link:                @neboola-cyan;
+@syntax-color-gfm-style:               @neboola-sea;
+@syntax-color-gfm-critic:              @neboola-orange;
+
+@syntax-color-json-comment:            @neboola-mono-3;
+@syntax-color-json-punctuation:        @neboola-mono-2;
+@syntax-color-json-key:                @neboola-blue;
+@syntax-color-json-value:              @neboola-cyan;
+@syntax-color-json-numeric:            @neboola-sea;
+@syntax-color-json-constant:           @neboola-sea;
+
+@syntax-color-html-text:               @neboola-orange;
+@syntax-color-html-comment:            @neboola-mono-3;
+@syntax-color-html-punctuation:        @neboola-mono-2;
+@syntax-color-html-bracket:            @neboola-mono-2;
+@syntax-color-html-template:           @neboola-yellow;
+@syntax-color-html-tag-name:           @neboola-pink;
+@syntax-color-html-attribute:          @neboola-blue;
+@syntax-color-html-value:              @neboola-cyan;
+
+@syntax-color-css-comment:             @neboola-mono-3;
+@syntax-color-css-punctuation:         @neboola-mono-2;
+@syntax-color-css-at-rule:             @neboola-pink;
+@syntax-color-css-selector:            @neboola-pink;
+@syntax-color-css-pseudo-selector:     @neboola-sea;
+@syntax-color-css-property:            @neboola-blue;
+@syntax-color-css-value:               @neboola-cyan;
+@syntax-color-css-important:           @neboola-sea;
+@syntax-color-css-variable:            @neboola-blue;
+
+// ------------------ Exported colors ------------------
+
+@syntax-color-attribute:               @neboola-mono-1;
+@syntax-color-class:                   @neboola-mono-1;
+@syntax-color-constant:                @neboola-mono-1;
+@syntax-color-function:                @neboola-mono-1;
+@syntax-color-import:                  @neboola-mono-1;
+@syntax-color-keyword:                 @neboola-mono-1;
+@syntax-color-method:                  @neboola-mono-1;
+@syntax-color-property:                @neboola-mono-1;
+@syntax-color-snippet:                 @neboola-mono-1;
+@syntax-color-tag:                     @neboola-mono-1;
+@syntax-color-value:                   @neboola-mono-1;
+@syntax-color-variable:                @neboola-mono-1;
